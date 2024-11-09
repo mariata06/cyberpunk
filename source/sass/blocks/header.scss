@@ -2,12 +2,21 @@
   padding: 28px 0;
 
   background-color: $color-neon-blue;
+  background-color: $color-default-white;
+  position: absolute;
+  width: 100%;
+  // top: 100px;
 
   .container {
     display: flex;
+    justify-content: space-between;
+    padding: 0 320px;
   }
 
   &__logo {
     color: $color-default-white;
   }
+
+  z-index: 1000;
+  background-color: transparent;
 }

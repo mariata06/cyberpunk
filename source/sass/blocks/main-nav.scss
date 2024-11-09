@@ -15,6 +15,13 @@
 
   &__link {
     color: $color-default-white;
+    display: block;
+    transition: opacity $trans-default;
+    cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
 
     &.is-active {
       opacity: 0.6;
@@ -23,5 +30,11 @@
 
   &__toggle {
     display: none;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
   }
 }

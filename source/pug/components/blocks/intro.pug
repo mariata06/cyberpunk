@@ -2,9 +2,20 @@ mixin intro()
   .intro
     //- вставлять блоки во внешний контейнер неверно
     //- все блоки содержат в себе container без доп класса tutorial__wrapper
+    //- +img("content", "hero-1", "png", width="", height="", "slide 1")
+    .carousel-container
+      .carousel
+        .slide
+          +img("content", "hero-1", "png", width="", height="", "slide 1")
+        .slide
+          +img("content", "hero-2", "png", width="", height="", "slide 2")
+        .slide
+          +img("content", "hero-3", "png", width="", height="", "slide 3")
+        .slide
+          +img("content", "hero-1", "png", width="", height="", "slide 1")
     .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
+      .intro__access
+        p Доступно на всех платформах
+        button.intro__button.btn--black(type="button", aria-label="know more", aria-pressed="false") Узнать больше
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+
