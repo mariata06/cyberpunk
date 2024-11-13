@@ -1,0 +1,34 @@
+mixin game-set()
+  .game-set
+
+    .container
+      .game-set__content
+        +img("content", "untitled", "jpg", width="", height="", "game set images")
+        .game-set__text
+
+          h2.title.title--h2.game-set__title Купить игру Cyberpunk 2077
+
+          .game-set__list
+            h3.blue-text.title.title--h3 В комплект входит:
+            ul
+              li
+                +icon("disk", 32, 32)
+                | Футляр с игровыми дисками
+              li
+                +icon("wysiwyg", 32, 32)
+                | Футляр с кодом для загрузки игры и дисками (pc)
+              li
+                +icon("collections", 32, 32)
+                | Справочник с информацией об игровом мире
+
+          .game-set__logos
+            h3.blue-text.title.title--h3 В Выберите платформу:
+            ul
+              li
+                +img("content", "pc-logo", "png", width="", height="", "pc-logo")
+              li
+                +icon("xbox-one-3-logo", 178, 35)
+              li
+                +img("content", "stadia-logo", "png", width="", height="", "stadia-logo")
+              li
+                +icon("playstation-logo", 169, 35)

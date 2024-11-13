@@ -1,0 +1,32 @@
+mixin game()
+  .game
+    +img("content", "border-img", "png", width="", height="", "decorative border")
+    .container
+      .game__text
+        h2.title.title--h2.game__title
+          +icon("promo-sticker", 132, 132)
+          | Играй и выигрывай!
+        p Играй в <span class="blue-text">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="blue-text">Xbox Series X</span> или <span class="blue-text">Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+        .game__content
+          .game__form
+            form(action="" id="uploadForm")
+              .form-group
+                input(type="text" id="name" placeholder="Как тебя зовут?" required)
+              .form-group
+                input(type="email" id="email" placeholder="Твой email" required)
+              .form-group
+                label(for="screenshot") Прикрепить скриншот
+                  span .png / .jpg / .pdf
+                input(type="file" id="screenshot" accept=".png, .jpg, .pdf" required)
+                p.file-name(id="fileName")
+
+              button.game__button.btn--yellow(type="submit", aria-label="more details", aria-pressed="false") Отправить
+
+              .form-group
+                label.checkbox-label
+                  input(type="checkbox" id="consent" checked required)
+                  | Согласен на обработку персональных данных
+
+          .game__img
+            +img("content", "game-console", "png", width="", height="", "game console")
+

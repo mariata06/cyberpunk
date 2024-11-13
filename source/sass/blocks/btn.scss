@@ -25,10 +25,26 @@
   }
 
   &--black {
+    font-family: "Roboto";
     background-color: $color-default-black;
     color: $color-yellow;
     font-size: 24px;
     line-height: 40px;
+    padding: 20px 50px;
+    transition: opacity $trans-default;
+    cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &--yellow {
+    font-family: "Roboto";
+    background-color: $color-yellow;
+    color: $color-default-black;
+    font-size: 18px;
+    line-height: 21px;
     padding: 20px 50px;
     transition: opacity $trans-default;
     cursor: pointer;

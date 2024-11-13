@@ -1,0 +1,26 @@
+mixin monitor()
+  .monitor
+    +img("content", "border-yellow-black", "png", width="", height="", "decorative border")
+    .container
+      .monitor__content
+        .momitor__images
+          +img("content", "monitor", "png", width="", height="", "monitor")
+          .monitor__logos
+            +icon("hp-logo", 80, 80)
+            +icon("x-logo", 90, 20)
+            img(src="img/content/cyberpunk-logo.png" alt="cyberpunk logo")
+        .monitor__text
+          h2.title.title--h2 Полное погружение вместе с HP
+          p Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!
+          .monitor__features
+            li
+              +icon("color_lens", 32, 32)
+              | Яркие насыщенные цвета
+            li
+              +icon("auto_awesome", 32, 32)
+              | Кристальная четкость изображения
+            li
+              +icon("auto_awesome_motion", 32, 32)
+              | Быстрые движения и плавный геймплей
+
+          button.monitor__button.btn--black(type="button", aria-label="more details", aria-pressed="false") Подробнее

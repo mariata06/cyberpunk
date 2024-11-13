@@ -1,4 +1,4 @@
-const initCarousel = (limitation) => {
+const initCarousel = () => {
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
   const totalSlides = slides.length - 1; // Учитываем клон

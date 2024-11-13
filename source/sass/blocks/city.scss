@@ -1,0 +1,29 @@
+.city {
+  &__text {
+    padding-right: 100px;
+  }
+
+  h2 {
+    font-size: 62px;
+    line-height: 63.3px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 34px;
+    font-family: "Roboto";
+    margin-bottom: 54px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+  }
+
+  &__double-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

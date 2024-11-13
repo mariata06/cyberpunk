@@ -1,0 +1,80 @@
+.game {
+  color: $color-default-white;
+  background-color: $color-default-black;
+
+  &__title {
+    // margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 400;
+
+    svg {
+      margin-right: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+
+
+  }
+  &__text {
+    p {
+      margin-bottom: 50px;
+    }
+  }
+
+  input[type="file"] {
+    border: 1px dashed $color-default-white;
+    min-height: 120px;
+    border-color: $color-default-white;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  label[for="screenshot"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid $color-default-white;
+    padding-bottom: 10px;
+    background-color: $color-default-black;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder {
+    color: $color-default-white;
+  }
+
+  &__form {
+    width: 460px;
+  }
+
+  .form-group .checkbox-label {
+    display: flex;
+    margin-bottom: 20px;
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 15px;
+  }
+}

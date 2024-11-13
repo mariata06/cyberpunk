@@ -1,0 +1,57 @@
+.game-set {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__content {
+    display: flex;
+    background-color: $color-default-black;
+  }
+
+  &__text {
+    background-color: $color-default-black;
+    padding: 70px 32px;
+    color: $color-default-white;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    width: 60%;
+  }
+
+  &__list {
+    margin-bottom: 70px;
+    ul svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__logos ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    flex-wrap: wrap;
+    width: 319px;
+  }
+
+  &__logos ul li {
+    width: 50%;
+    margin-bottom: 55px;
+  }
+}
