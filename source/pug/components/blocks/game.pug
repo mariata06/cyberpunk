@@ -15,16 +15,17 @@ mixin game()
               .form-group
                 input(type="email" id="email" placeholder="Твой email" required)
               .form-group
-                label(for="screenshot") Прикрепить скриншот
+                label(for="screenshot")
+                  span Прикрепить скриншот
                   span .png / .jpg / .pdf
-                input(type="file" id="screenshot" accept=".png, .jpg, .pdf" required)
+                input(type="file" id="screenshot" name="screenshot" accept=".png, .jpg, .pdf" required)
                 p.file-name(id="fileName")
 
               button.game__button.btn--yellow(type="submit", aria-label="more details", aria-pressed="false") Отправить
 
               .form-group
                 label.checkbox-label
-                  input(type="checkbox" id="consent" checked required)
+                  input(type="checkbox" id="consent" required)
                   | Согласен на обработку персональных данных
 
           .game__img

@@ -2,14 +2,37 @@ mixin intro()
   .intro
     .carousel-container
       .carousel
-        .slide
-          +img("content", "hero-1", "png", width="", height="", "slide 1")
-        .slide
-          +img("content", "hero-2", "png", width="", height="", "slide 2")
-        .slide
-          +img("content", "hero-3", "png", width="", height="", "slide 3")
-        .slide
-          +img("content", "hero-1", "png", width="", height="", "slide 1")
+        .slide.slide--1
+          //- img(src="img/content/hero-1.png")
+          //- +img("content", "hero-1", "png", width="", height="", "slide 1")
+          //- img(src="img/content/hero-1.png" srcset="img/content/hero-1@mobile.png 767w, img/content/hero-1@tablet.png 1023w, img/content/hero-1.png 1024w"
+          //- sizes="(max-width: 767px) 100vw, (max-width: 1023px) 100vw, 50vw" alt="slide 1").
+          img(
+            src="img/content/hero-1.png"
+            srcset="img/content/hero-1@mobile.png 767w, img/content/hero-1@tablet.png 1023w, img/content/hero-1.png 1024w"
+            sizes="(max-width: 767px) 100vw, (min-width: 768px) and (max-width: 1023px) 100vw, (min-width: 1024px) 100vw"
+            alt="Описание слайда")
+        .slide.slide--2
+          img(
+            src="img/content/hero-2.png"
+            srcset="img/content/hero-2@mobile.png 767w, img/content/hero-2@tablet.png 1023w, img/content/hero-2.png 1024w"
+            sizes="(max-width: 767px) 100vw, (min-width: 768px) and (max-width: 1023px) 100vw, (min-width: 1024px) 100vw"
+            alt="Описание слайда")
+          //- +img("content", "hero-2", "png", width="", height="", "slide 2")
+        .slide.slide--3
+          img(
+            src="img/content/hero-3.png"
+            srcset="img/content/hero-3@mobile.png 767w, img/content/hero-3@tablet.png 1023w, img/content/hero-3.png 1024w"
+            sizes="(max-width: 767px) 100vw, (min-width: 768px) and (max-width: 1023px) 100vw, (min-width: 1024px) 100vw"
+            alt="Описание слайда")
+          //- +img("content", "hero-3", "png", width="", height="", "slide 3")
+        .slide.slide--4
+          img(
+            src="img/content/hero-1.png"
+            srcset="img/content/hero-1@mobile.png 767w, img/content/hero-1@tablet.png 1023w, img/content/hero-1.png 1024w"
+            sizes="(max-width: 767px) 100vw, (min-width: 768px) and (max-width: 1023px) 100vw, (min-width: 1024px) 100vw"
+            alt="Описание слайда")
+          //- +img("content", "hero-1", "png", width="", height="", "slide 1")
     .container
       .intro__access
         p Доступно на всех платформах

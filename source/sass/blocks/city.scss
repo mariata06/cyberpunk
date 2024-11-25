@@ -27,3 +27,17 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 1023px) {
+  .city__images {
+    flex-direction: column;
+  }
+
+  .city__double-img {
+    flex-direction: row;
+  }
+
+  .city__text {
+    padding-right: 0;
+  }
+}
